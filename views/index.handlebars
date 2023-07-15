@@ -1,0 +1,31 @@
+<div style='max-width: 800px; margin: auto;'>
+	<h2 style='color: blue; text-align: center;'>Vista principal del chat</h2>
+
+	<p
+		id='messagesContainer'
+		style='border: 1px solid #ccc; padding: 10px; height: 200px; overflow: auto;'
+	></p>
+
+	<p
+		id='notificationContainer'
+		style='background-color: yellow; color: black; padding: 10px; text-align: center;'
+	></p>
+
+	<input
+		type='text'
+		id='messageInput'
+		style='width: 70%; padding: 10px; margin: 10px 0;'
+	/>
+	<input
+		type='button'
+		value='Enviar'
+		id='messageButton'
+		style='width: 20%; padding: 10px; background-color: blue; color: white;'
+	/>
+</div>
+
+<script src='/socket.io/socket.io.js'></script>
+<script
+	src='https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js'
+></script>
+<script src='/js/index.js'></script>
